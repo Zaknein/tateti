@@ -1,13 +1,27 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "game.css" %}">
     <title>Document</title>
 </head>
 <body>
-    <main> Hola devuelvo algo</main>
-    
+    <main> Hola devuelvo algo  {{caca}}</main>
+        <div class="board">
+
+            <div class="cell"><a href="play?casilla=1">.{{caca.1}}</a></div>
+            <div class="cell"><a href="play?casilla=2">.{{caca.2}}</a></div>
+            <div class="cell"><a href="play?casilla=3">.{{caca.3}}</a></div>
+            <div class="cell"><a href="play?casilla=4">.{{caca.4}}</a></div>
+            <div class="cell"><a href="play?casilla=5">.{{caca.5}}</a></div>
+            <div class="cell"><a href="play?casilla=6">.{{caca.6}}</a></div>
+            <div class="cell"><a href="play?casilla=7">.{{caca.7}}</a></div>
+            <div class="cell"><a href="play?casilla=8">.{{caca.8}}</a></div>
+            <div class="cell"><a href="play?casilla=9">.{{caca.9}}</a></div>
+        </div>
+    <a href="reset">resetear</a>
 </body>
 </html>
